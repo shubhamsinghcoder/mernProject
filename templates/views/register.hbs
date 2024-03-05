@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <title>🤩register</title>
+   {{>header}}
+  </head>
+  <body>
+    {{>navbar}}
+     <div class="register-container">
+      <form class="form-container" action="/register" method="POST">
+        <div class="left-container">
+          <i class="fa-solid fa-rocket"></i>
+          <h1>Welcome</h1>
+          <p>This is a complete full stack website</p>
+          <a href="/login">Login</a>
+        </div>
+        <div class="right-container">
+           <div class="buttons-container">
+            <a href="/register" id="btn1">Registration</a>
+            <a href="/login" id="btn2">Login</a>
+           </div>
+           <div class="heading-container">
+            <h1>Employee Registration Form</h1>
+           </div>
+          
+          <div class="main-form-container">
+             <div class="left-form-container">
+            <input type="text" placeholder="First Name*" name="firstname">           
+            <input type="email" placeholder=" Your Email*" name="email">
+            <input type="phone" placeholder=" Your Phone*" name="phone">
+            <input type="password" placeholder="Password*" name="password">
+           </div>
+           <div class="right-form-container">
+            <input type="text" placeholder="Last Name*" name="lastname">
+            <input type="number" placeholder="Enter Your Age" name="age"> 
+            <input type="password" placeholder="Confirm Password*" name="confirmpassword">
+                
+           </div>
+          </div>
+          <div class="buttons-container-submit">
+            <input type="submit" value="Register">
+          </div>
+        </div>
+      </form>
+     </div>
+  </body>
+</html>
